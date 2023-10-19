@@ -8,6 +8,6 @@
  */
 void s_nop(stack_t **head, unsigned int line_num)
 {
-    (void) head;
-    (void) line_num;
+	(void) head;
+	(void) line_num;
 }

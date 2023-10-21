@@ -30,7 +30,7 @@ void s_push(stack_t **head, unsigned int line_num)
 
 	}
 	else
-	{fprintf(stderr, "L%d: usage:push integer\n", line_num);
+	{fprintf(stderr, "L%d: usage: push integer\n", line_num);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);

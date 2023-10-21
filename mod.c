@@ -20,7 +20,7 @@ void s_mod(stack_t **head, unsigned int line_num)
 	}
 	if (length < 2)
 	{
-		fprintf(stderr, "L%d: Can't mod, stack too short\n", line_num);
+		fprintf(stderr, "L%d: can't mod, stack too short\n", line_num);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
@@ -29,7 +29,7 @@ void s_mod(stack_t **head, unsigned int line_num)
 	current = *head;
 	if (current->n == 0)
 	{
-		fprintf(stderr, "L%d: Division by zero\n", line_num);
+		fprintf(stderr, "L%d: division by zero\n", line_num);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);

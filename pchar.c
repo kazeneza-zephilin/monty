@@ -15,7 +15,7 @@ void s_pchar(stack_t **head, unsigned int line_num)
 	current = *head;
 	if (!current)
 	{
-		fprintf(stderr, "L%d: Can't pchar, stack empty\n", line_num);
+		fprintf(stderr, "L%d: can't pchar, stack empty\n", line_num);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
@@ -23,7 +23,7 @@ void s_pchar(stack_t **head, unsigned int line_num)
 	}
 	if (current->n > 127 || current->n < 0)
 	{
-		fprintf(stderr, "L%d: Can't pchar, value out of range\n", line_num);
+		fprintf(stderr, "L%d: can't pchar, value out of range\n", line_num);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
